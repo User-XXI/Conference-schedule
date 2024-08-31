@@ -1,0 +1,155 @@
+@font-face {
+    font-family: 'Akrobat';
+    src: url('/static/Akrobat-Bold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Century Gothic';
+    src: url('/static/centurygothic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto Bold';
+    src: url('/static/Roboto-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('/static/Roboto-Regular.ttf') format('truetype');
+}
+
+.sched-time-23, .sched-event-23, .sched-entry-23, .sched-event-topic-23, .sched-event-speaker-23, .sched-event-org-23 {
+    font-size: initial;
+    line-height: initial;
+}
+
+.sched-time-23, .sched-event-23 {
+    padding: 5px;
+}
+
+.sched-entry-23 {
+    display: flex;
+    padding: 5px;
+    position: relative;
+}
+
+.sched-time-23 {
+    font-family: "Century Gothic";
+    font-weight: normal;
+    color: #F78400;
+    text-align: center;
+    margin-top: 5px;
+    align-self: center;
+}
+
+.sched-global-bullet-23 {
+    height: 15px;
+    flex: 0 0 15px;
+    border-radius: 50%;
+    background-color: #F78400;
+    display: inline-block;
+    margin: 5px;
+    position: relative;
+    top: 7px;
+    z-index: 1;
+    left: -3px;
+}
+
+.sched-event-bullet-23 {
+    height: inherit;
+    flex: 0 0 10px;
+    border-radius: 5px;
+    background-color: #F78400;
+    display: inline-block;
+    margin: 5px;
+}
+
+.sched-event-23 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    flex: 1 1 auto;
+    justify-content: center;
+}
+
+.sched-event-topic-23 {
+    font-family: "Akrobat";
+    color: white;
+    font-weight: bold;
+}
+
+.sched-event-speaker-23, .sched-event-org-23 {
+    font-family: "Century Gothic";
+    color: gray;
+    font-weight: normal;
+}
+
+.sched-global-line-first-23,
+.sched-global-line-23 {
+    height: 1px;
+    background-color: white;
+    display: inline-block;
+    position: relative;
+    top: 19px;
+    flex: 1 1 100%;
+}
+
+.sched-sections-23 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background: #110d0f;
+    flex-shrink: 1;
+    width: 100%;
+    padding-bottom: 50px;
+    padding-top: 20px;
+}
+
+.sched-section-23 {
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    flex-grow: 1;
+}
+
+.section-name-23 {
+    display: flex;
+    align-self: center;
+    font-family: "Akrobat";
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+    width: 100%;
+}
+
+.section-divider-23 {
+    background-color: #F78400;
+    width: 1px;
+    height: 30px;
+    float: left;
+    margin-right: 30px;
+    margin-left: 63px;
+}
+
+@media only screen and (min-width: 1100px) {
+    .hidden-on-desktop {
+        visibility: hidden;
+    }
+    .sched-global-line-first-23 {
+        flex: 1 0 70vw;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .stack-on-mobile {
+        flex-direction: column;
+    }
+    .sched-global-line-23 {
+        flex: 1 1 100%;
+    }
+    .sched-entry-23 {
+        height: auto !important;
+        padding-bottom: 5px !important;
+    }
+}
